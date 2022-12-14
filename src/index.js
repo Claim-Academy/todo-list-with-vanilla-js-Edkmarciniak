@@ -1,4 +1,8 @@
 const root = document.querySelector("#root");
 
-const list = await fetch("https://jsonplaceholder.typicode.com/todos");
+const todo = await fetch("https://jsonplaceholder.typicode.com/todos");
+
+const list = await todo.json();
+
+console.log(list);
 
