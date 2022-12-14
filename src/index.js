@@ -6,8 +6,8 @@ const foxTrot = await todo.json();
 
 function createId(user) {
     return `
-    <section class="bg-gradient-to-br">
-    <h2 UserID: ${user.userId}</h2>
+    <section class="bg-teal-600">
+    <h2 UserID: ${user.userId} </h2>
 
     <ul>
       <li>ID Number: ${user.id}</li>
