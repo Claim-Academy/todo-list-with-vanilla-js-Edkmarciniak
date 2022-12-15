@@ -30,3 +30,4 @@ function createId(user) {
   const bioCardsHTML = foxTrot.map(createId).join("");
 
   root.innerHTML = bioCardsHTML;
+
