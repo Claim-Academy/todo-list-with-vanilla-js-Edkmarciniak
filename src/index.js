@@ -18,13 +18,16 @@ function createId(user) {
     `;
   }
 
-function filterByIdNumber(list, searchNumbers) {
-  return list.filter((user) => user.id.includes(searchNumbers));
+function filterByIdNumber(numberList, searchNumbers) {
+  return numberList.filter((user) => user.id.includes(searchNumbers));
 }
 
+  // Business logic
   const todo = await fetch("https://jsonplaceholder.typicode.com/todos");
   const foxTrot = await todo.json();
   const bioCardsHTML = foxTrot.map(createId).join("");
 
+
+  root.classList.add
   root.innerHTML = bioCardsHTML;
 
