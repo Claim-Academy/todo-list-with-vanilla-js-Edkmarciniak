@@ -31,3 +31,5 @@ function filterByIdNumber(numberList, searchNumbers) {
   root.classList.add("container", "mx-auto", "justify-center", );
 
   root.innerHTML = bioCardsHTML;
+
+
