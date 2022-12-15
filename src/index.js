@@ -18,12 +18,9 @@ function createId(user) {
     `;
   }
 
-
-
-
-
-
-
+function filterByIdNumber(list, searchNumbers) {
+  return list.filter((user) => user.id.includes(searchNumbers));
+}
 
   const todo = await fetch("https://jsonplaceholder.typicode.com/todos");
   const foxTrot = await todo.json();
