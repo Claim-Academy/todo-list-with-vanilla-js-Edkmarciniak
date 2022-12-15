@@ -1,7 +1,9 @@
+// Initial const
 const root = document.querySelector("#root");
 
+let letters = "";
 
-
+// Function declarations/expressions
 function createId(user) {
     return `
     <section class="bg-gradient-to-r from-blue-500 to-green-500 text-black p-10 ">
