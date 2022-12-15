@@ -1,8 +1,6 @@
 const root = document.querySelector("#root");
 
-const todo = await fetch("https://jsonplaceholder.typicode.com/todos");
 
-const foxTrot = await todo.json();
 
 function createId(user) {
     return `
@@ -18,6 +16,15 @@ function createId(user) {
     `;
   }
 
+
+
+
+
+
+
+
+  const todo = await fetch("https://jsonplaceholder.typicode.com/todos");
+  const foxTrot = await todo.json();
   const bioCardsHTML = foxTrot.map(createId).join("");
 
   root.innerHTML = bioCardsHTML;
