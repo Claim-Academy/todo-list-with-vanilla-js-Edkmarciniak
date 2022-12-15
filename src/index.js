@@ -1,7 +1,7 @@
 // Initial const
 const root = document.querySelector("#root");
 
-let letters = "";
+const letters = "";
 
 // Function declarations/expressions
 function createId(user) {
@@ -28,6 +28,14 @@ function filterByIdNumber(numberList, searchNumbers) {
   const bioCardsHTML = foxTrot.map(createId).join("");
 
 
-  root.classList.add
-  root.innerHTML = bioCardsHTML;
+  root.classList.add("flex", "flex-col", "gap-y-8", "items-center");
+  root.innerHTML `
+  <div>
+  <label for="search" class="sr-only">Search</label>
+  <input type="search" id="search" placeholder="🔍" />
+  </div>
+  <main class="items-center grid grid-cols-3 gap-4">
+    ${bioCardsHTML}
+  </main
+  `;
 
