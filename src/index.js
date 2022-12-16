@@ -30,8 +30,10 @@ function filterByIdNumber(users, searchNumbers) {
   root.classList.add("container", "mx-auto", "justify-center", );
 
   root.innerHTML = `
+  <div class="shadow-lg">
   <label for="search" class="sr-only">Search</label>
   <input type="search" id="search" placeholder="🔍" />
+  </div>
   <main class="items-center grid grid-cols-3 gap-4">
   ${bioCardsHTML}
 </main
